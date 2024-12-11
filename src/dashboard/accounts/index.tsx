@@ -25,7 +25,7 @@ import { Loader } from "dashboard/common/loader";
 const renderColumnsData: Pick<ColumnProps, "header" | "field">[] = [
     { field: "accountnumber", header: "Account" },
     { field: "accounttype", header: "Type" },
-    { field: "accountstatus", header: "Name" },
+    { field: "name", header: "Name" },
     { field: "created", header: "Date" },
 ];
 

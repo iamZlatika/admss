@@ -7,6 +7,7 @@ import { AccountQuickPay } from "./quick-pay";
 import { AccountPayOff } from "./pay-off";
 import { AccountBalanceAdjustment } from "./balance-adjustment";
 import "./index.css";
+import { observer } from "mobx-react-lite";
 
 export enum AccountTakePaymentTabs {
     QUICK_PAY = "quick-pay",
@@ -14,7 +15,7 @@ export enum AccountTakePaymentTabs {
     BALANCE_ADJUSTMENT = "balance-adjustment",
 }
 
-export const AccountTakePayment = (): ReactElement => {
+export const AccountTakePayment = observer((): ReactElement => {
     const { id } = useParams();
     const navigate = useNavigate();
     const [searchParams, setSearchParams] = useSearchParams();
@@ -145,4 +146,4 @@ export const AccountTakePayment = (): ReactElement => {
             </div>
         </div>
     );
-};
+});

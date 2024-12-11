@@ -34,7 +34,7 @@ export const PayOffInfo = observer((): ReactElement => {
                     className='take-payment__input'
                     date={PaymentDate}
                     onChange={({ target: { value } }) =>
-                        changeAccountTakePayment("PaymentDate", String(value))
+                        changeAccountTakePayment("PaymentDate", Number(value))
                     }
                 />
             </div>

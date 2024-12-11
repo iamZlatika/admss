@@ -47,9 +47,13 @@
 .card-content__wrapper {
     height: 60vh;
     max-height: 754px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
+
+.card-content__wrapper::-webkit-scrollbar-track {
+    background: var(--admss-app-light-blue);
+  }
 
 .card-content__wrapper::-webkit-scrollbar {
     width: 4px;

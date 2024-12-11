@@ -112,6 +112,7 @@ export const AddFeeDialog = ({ onHide, action, visible }: AddFeeDialogProps) => 
 
             <div className='add-fee__control'>
                 <CurrencyInput
+                    required
                     className='add-fee__input'
                     value={addFee.amount}
                     onChange={({ value }) => setAddFee({ ...addFee, amount: value || 0 })}
@@ -122,6 +123,7 @@ export const AddFeeDialog = ({ onHide, action, visible }: AddFeeDialogProps) => 
 
             <span className='p-float-label'>
                 <InputText
+                    required
                     className='w-full'
                     value={addFee.reason}
                     onChange={({ target: { value } }) => {
